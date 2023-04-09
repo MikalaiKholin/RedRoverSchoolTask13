@@ -1,4 +1,28 @@
 public class MonthUtils {
+
+    public static class MonthNested {
+        private final String name;
+        private final int numbersOfDays;
+        private final int numbersOfWorkingDays;
+
+        private MonthNested(String name, int numbersOfDays, int numbersOfWorkingDays) {
+            this.name = name;
+            this.numbersOfDays = numbersOfDays;
+            this.numbersOfWorkingDays = numbersOfWorkingDays;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getNumbersOfDays() {
+            return numbersOfDays;
+        }
+
+        public int getNumbersOfWorkingDays() {
+            return numbersOfWorkingDays;
+        }
+    }
     public final static Month [] months = {new Month("January", 31, 24),
             new Month("February", 28, 24),
             new Month("March", 31,25),

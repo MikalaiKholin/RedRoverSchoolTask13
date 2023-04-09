@@ -20,5 +20,11 @@ public class Main {
         }
 
         System.out.println(Arrays.toString(MonthUtils.getYear()));
+
+        Employee2 inna = new Employee2("Inna", 25, Gender.FEMALE, 50);
+        Manager2 ira = new Manager2("Ira", 27, Gender.FEMALE, 50, 40);
+
+        System.out.println(inna.getSalary(MonthUtils.getQuarter()[1]));
+        System.out.println(ira.getSalary(MonthUtils.getQuarter()[1]));
     }
 }
