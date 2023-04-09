@@ -23,5 +23,5 @@ public abstract class Employee {
         this.baseSalary = baseSalary;
     }
 
-    public abstract void getSalary();
+    public abstract double getSalary();
 }
